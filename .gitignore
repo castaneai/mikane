@@ -16,3 +16,5 @@
 .idea/
 
 appengine/secret.yaml
+
+vendor/
