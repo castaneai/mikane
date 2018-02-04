@@ -13,6 +13,7 @@ import (
 	"fmt"
 	"time"
 	"strconv"
+	"github.com/gin-contrib/cors"
 )
 
 const (
@@ -22,6 +23,7 @@ const (
 
 func init() {
 	r := gin.Default()
+	r.Use(cors.Default())
 	r.GET("/total", getTotalAsset)
 	http.Handle("/", r)
 }

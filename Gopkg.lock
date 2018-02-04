@@ -20,6 +20,12 @@
   revision = "5e0142a47026ae67dff63eec8735b7eead426697"
 
 [[projects]]
+  name = "github.com/gin-contrib/cors"
+  packages = ["."]
+  revision = "cf4846e6a636a76237a28d9286f163c132e841bc"
+  version = "v1.2"
+
+[[projects]]
   branch = "master"
   name = "github.com/gin-contrib/sse"
   packages = ["."]
@@ -78,10 +84,12 @@
     "internal/base",
     "internal/datastore",
     "internal/log",
+    "internal/memcache",
     "internal/modules",
     "internal/remote_api",
     "internal/urlfetch",
     "log",
+    "memcache",
     "urlfetch"
   ]
   revision = "150dc57a1b433e64154302bdc40b6bb8aefa313a"
@@ -102,6 +110,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "53693dbef09b50ecb5c1ed0f7bd77a31359ea0c746ed0fe22168d11170e9fe26"
+  inputs-digest = "43adbab233007d67d1efdcce6151f6f25d583be6e8d9b54191b12b7aecc89137"
   solver-name = "gps-cdcl"
   solver-version = 1
