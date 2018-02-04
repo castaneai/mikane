@@ -10,7 +10,12 @@ env_variables:
 ```
 
 ## Deploy
+deploying on CircleCI
 
-```
-goapp deploy -application <gcp_project_id> -version <version> appengine/app.yaml
-```
+### Environment Variables
+
+|name|value|
+|:---|:----|
+|GCP_PROJECT_ID| project id on Google Cloud Platform|
+|GCP_SECRET_KEY| base64-encoded secret.json content on Google Cloud Platform|
+|MF_SESSION| mf session id|
